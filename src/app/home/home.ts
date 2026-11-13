@@ -19,6 +19,9 @@ export class Home {
       profiency: lang.profiency ?? 'Ing en Computacion | Desarrollador web y movil | Sistemas distribuidos en la nube',
       see_projects: lang.see_projects ?? 'Ver Proyectos',
       contact_me: lang.contact_me ?? 'Contáctame',
+      stack_heading: lang.stack_heading ?? 'Stack',
+      stack_intro: lang.stack_intro ?? 'Tecnologías con las que diseño sistemas fullstack, serverless y distribuidos.',
+      stack_groups: lang.stack_groups ?? [],
     };
   })
   protected readonly link = signal('/projects')

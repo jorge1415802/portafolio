@@ -10,6 +10,34 @@ export const dictionary = {
     greetings: 'Hola soy',
     see_projects: 'Ver Proyectos',
     contact_me: 'Contáctame',
+    stack_heading: 'Stack',
+    stack_intro: 'Tecnologías con las que diseño sistemas fullstack, serverless y distribuidos.',
+    stack_groups: [
+      {
+        title: 'Lenguajes y backend',
+        items: ['Go', 'Node.js', 'NestJS', 'Laravel'],
+      },
+      {
+        title: 'Protocolos',
+        items: ['HTTP', 'gRPC'],
+      },
+      {
+        title: 'Frontend',
+        items: ['Angular', 'RxJS', 'Signals', 'React', 'Redux', 'Zustand', 'Ionic', 'PWA', 'React Native'],
+      },
+      {
+        title: 'Cloud y DevOps',
+        items: ['Kubernetes', 'AWS Lambda', 'SQS', 'SNS', 'S3', 'EKS', 'Kong', 'Docker', 'HPA', 'GitHub Actions', 'Jenkins', 'Serverless', 'esbuild'],
+      },
+      {
+        title: 'Datos, mensajería y observabilidad',
+        items: ['PostgreSQL', 'MySQL', 'MongoDB', 'DynamoDB', 'RabbitMQ', 'Kysely', 'Firebase', 'Coralogix', 'New Relic'],
+      },
+      {
+        title: 'Metodologías y herramientas',
+        items: ['Scrum', 'Kanban', 'Agile', 'Clean Code', 'Git', 'Jest', 'Cypress'],
+      },
+    ],
     projects_list: [
       {
         title: 'Sistema de Alta Disponibilidad con NestJS & RabbitMQ',
@@ -59,6 +87,34 @@ export const dictionary = {
     greetings: 'Hello I am',
     see_projects: 'See Projects',
     contact_me: 'Contact Me',
+    stack_heading: 'Stack',
+    stack_intro: 'Technologies I use to design fullstack, serverless, and distributed systems.',
+    stack_groups: [
+      {
+        title: 'Languages and backend',
+        items: ['Go', 'Node.js', 'NestJS', 'Laravel'],
+      },
+      {
+        title: 'Protocols',
+        items: ['HTTP', 'gRPC'],
+      },
+      {
+        title: 'Frontend',
+        items: ['Angular', 'RxJS', 'Signals', 'React', 'Redux', 'Zustand', 'Ionic', 'PWA', 'React Native'],
+      },
+      {
+        title: 'Cloud and DevOps',
+        items: ['Kubernetes', 'AWS Lambda', 'SQS', 'SNS', 'S3', 'EKS', 'Kong', 'Docker', 'HPA', 'GitHub Actions', 'Jenkins', 'Serverless', 'esbuild'],
+      },
+      {
+        title: 'Data, messaging and observability',
+        items: ['PostgreSQL', 'MySQL', 'MongoDB', 'DynamoDB', 'RabbitMQ', 'Kysely', 'Firebase', 'Coralogix', 'New Relic'],
+      },
+      {
+        title: 'Methodologies and tools',
+        items: ['Scrum', 'Kanban', 'Agile', 'Clean Code', 'Git', 'Jest', 'Cypress'],
+      },
+    ],
     projects_list: [
       {
         title: 'High Availability System with NestJS & RabbitMQ',
