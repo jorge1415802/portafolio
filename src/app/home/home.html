@@ -1,0 +1,27 @@
+<section class="flex flex-col items-center justify-center text-center min-h-[70vh] px-4 animate-fade-in">
+  
+  <h1 class="text-4xl sm:text-6xl font-black tracking-tight text-foreground max-w-3xl leading-tight">
+    {{ data().greetings }}
+    <span class="bg-linear-to-r from-sky-400 to-blue-600 bg-clip-text text-transparent">
+      Jorge Luis Rodriguez
+    </span>
+  </h1>
+
+  
+  <p class="mt-6 text-lg sm:text-xl text-muted-foreground max-w-2xl font-normal leading-relaxed">
+    {{ data().profiency }}
+  </p>
+
+  
+  
+
+  
+  <div class="mt-10 flex flex-wrap justify-center gap-4 hover:gap-6 transition-all">
+    <a [routerLink]=link() hlmBtn size="lg" class="cursor-pointer text-base font-medium text-muted-foreground hover:text-sky-400 underline decoration-1 underline-offset-8 decoration-sky-400 hover:drop-shadow-[0_0_8px_rgba(56,189,248,0.9)] transition-all duration-300">
+      {{ data().see_projects }}
+    </a>
+    <a href="mailto:rjogeluis64@gmail.com" hlmBtn variant="outline" size="lg" class="cursor-pointer text-base font-medium text-muted-foreground hover:text-sky-400 underline decoration-1 underline-offset-8 decoration-sky-400 hover:drop-shadow-[0_0_8px_rgba(56,189,248,0.9)] transition-all duration-300">
+      {{ data().contact_me }}
+    </a>
+  </div>
+</section>

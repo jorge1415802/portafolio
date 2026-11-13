@@ -1,0 +1,37 @@
+<header class="sticky top-0 z-50 w-full border-b border-border bg-background/90 backdrop-blur-md">
+  <div class="mx-auto flex h-14 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+
+    <!-- Logo o Nombre -->
+    <div class="flex items-center gap-2">
+      <div>
+        <a routerLink="/" class="text-sm font-bold tracking-tight text-foreground hover:opacity-80 transition">
+          {{profile().prefix}} <span class="text-primary font-black">{{profile().porfolio}}</span>
+        </a>
+      </div>
+      <div class="flex items-center gap-4">
+        <button
+          class="transition-color duration-700 ease-in-out px-3 py-2 rounded-md text-sm font-medium transition cursor-pointer hover:bg-muted :hover:text-foreground" 
+          (click)="translate.toggleLanguage()" hlmBtn variant="outline" size="sm">
+          {{ translate.currentlanguage() === 'es' ? 'EN' : 'ES' }}
+        </button>
+      </div>
+    </div>
+    <!-- Enlaces de Navegación (Estilo Shadcn) -->
+    <nav class="flex items-center gap-1 sm:gap-2">
+      @for(link of links(); track link.path){
+      <a [routerLink]="link.path"
+        class="transition-color duration-700 ease-in-out px-3 py-2 rounded-md text-sm font-medium transition cursor-pointer hover:bg-muted :hover:text-foreground"
+        routerLinkActive="bg-muted text-foreground" [routerLinkActiveOptions]="{ exact: true }" hlmBtn variant="ghost"
+        size="sm">
+        {{link.label}}
+      </a>
+      }
+      <!-- Botón Temático o de Contacto Destacado -->
+      <a href="https://linkedin.com" target="_blank" hlmBtn size="sm" class="ml-2 hidden sm:inline-flex">
+        LinkedIn
+      </a>
+    </nav>
+
+
+  </div>
+</header>

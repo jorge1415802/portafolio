@@ -1,3 +1,83 @@
-/* You can add global styles to this file, and also import other style files */
+@import "tailwindcss";
 
-@import 'tailwindcss';
+@theme inline {
+  --color-border: var(--color-slate-200);
+  --color-input: var(--color-slate-200);
+  --color-ring: var(--color-slate-950);
+  --color-background: var(--color-white);
+  --color-foreground: var(--color-slate-950);
+
+  --color-primary: var(--color-slate-900);
+  --color-primary-foreground: var(--color-slate-50);
+
+  --color-secondary: var(--color-slate-100);
+  --color-secondary-foreground: var(--color-slate-900);
+
+  --color-destructive: var(--color-red-500);
+  --color-destructive-foreground: var(--color-slate-50);
+
+  --color-muted: var(--color-slate-100);
+  --color-muted-foreground: var(--color-slate-500);
+
+  --color-accent: var(--color-slate-100);
+  --color-accent-foreground: var(--color-slate-900);
+
+  --color-popover: var(--color-white);
+  --color-popover-foreground: var(--color-slate-950);
+
+  --color-card: var(--color-white);
+  --color-card-foreground: var(--color-slate-950);
+
+  --radius-lg: 0.5rem;
+  --radius-md: calc(0.5rem - 2px);
+  --radius-sm: calc(0.5rem - 4px);
+}
+
+/* Si quieres que tu portafolio tenga modo oscuro por defecto, puedes agregar esto: */
+@media (prefers-color-scheme: dark) {
+  @theme inline {
+    --color-border: var(--color-slate-800);
+    --color-input: var(--color-slate-800);
+    --color-ring: var(--color-slate-300);
+    --color-background: var(--color-slate-950);
+    --color-foreground: var(--color-slate-50);
+
+    --color-primary: var(--color-slate-50);
+    --color-primary-foreground: var(--color-slate-900);
+
+    --color-secondary: var(--color-slate-800);
+    --color-secondary-foreground: var(--color-slate-50);
+
+    --color-muted: var(--color-slate-800);
+    --color-muted-foreground: var(--color-slate-400);
+
+    --color-accent: var(--color-slate-800);
+    --color-accent-foreground: var(--color-slate-50);
+
+    --color-popover: var(--color-slate-950);
+    --color-popover-foreground: var(--color-slate-50);
+
+    --color-card: var(--color-slate-900);
+    --color-card-foreground: var(--color-slate-50);
+  }
+}
+
+body {
+  /* background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: sans-serif; */
+
+  /* Fondo oscuro base (slate-950) */
+    background-color: var(--color-slate-950);
+    color: var(--color-slate-50);
+    
+    /* Degradado radial arriba + cuadrícula sutil usando variables nativas de Tailwind v4 */
+    background-image: 
+      radial-gradient(ellipse 80% 50% at 50% -20%, color-mix(in srgb, var(--color-indigo-500) 56%, transparent), transparent),
+      linear-gradient(to right, color-mix(in srgb, var(--color-slate-800) 40%, transparent) 1px, transparent 1px),
+      linear-gradient(to bottom, color-mix(in srgb, var(--color-slate-800) 40%, transparent) 1px, transparent 1px);
+      
+    background-size: 100% 100%, 4rem 4rem, 4rem 4rem;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
