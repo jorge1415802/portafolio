@@ -22,7 +22,7 @@ Tailwind CSS - [https://tailwindcss.com/](https://tailwindcss.com/)
 
 ## Author
 
-[Jorge Luis Rodriguez -- Github](https://github.com/jorge1415802)
-[Jorge Luis Rodriguez -- Linkedin](https://www.linkedin.com/in/jorge-luis-rodriguez-756793154/)
+- [Jorge Luis Rodriguez -- Github](https://github.com/jorge1415802)
+- [Jorge Luis Rodriguez -- Linkedin](https://www.linkedin.com/in/jorge-luis-rodriguez-756793154/)
 
 
