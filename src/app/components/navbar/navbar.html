@@ -1,37 +1,31 @@
 <header class="sticky top-0 z-50 w-full border-b border-border bg-background/90 backdrop-blur-md">
-  <div class="mx-auto flex h-14 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+  <div class="mx-auto flex max-w-7xl flex-col gap-2 px-4 py-3 sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:h-14 lg:px-8 lg:py-0">
 
-    <!-- Logo o Nombre -->
-    <div class="flex items-center gap-2">
-      <div>
-        <a routerLink="/" class="text-sm font-bold tracking-tight text-foreground hover:opacity-80 transition">
-          {{profile().prefix}} <span class="text-primary font-black">{{profile().porfolio}}</span>
-        </a>
-      </div>
-      <div class="flex items-center gap-4">
-        <button
-          class="transition-color duration-700 ease-in-out px-3 py-2 rounded-md text-sm font-medium transition cursor-pointer hover:bg-muted :hover:text-foreground" 
-          (click)="translate.toggleLanguage()" hlmBtn variant="outline" size="sm">
-          {{ translate.currentlanguage() === 'es' ? 'EN' : 'ES' }}
-        </button>
-      </div>
+    <div class="flex items-center justify-between gap-2">
+      <a routerLink="/" class="text-sm font-bold tracking-tight text-foreground transition hover:opacity-80">
+        {{profile().prefix}} <span class="text-primary font-black">{{profile().porfolio}}</span>
+      </a>
+      <button
+        class="cursor-pointer rounded-md px-3 py-2 text-sm font-medium transition duration-700 ease-in-out hover:bg-muted"
+        (click)="translate.toggleLanguage()" hlmBtn variant="outline" size="sm">
+        {{ translate.currentlanguage() === 'es' ? 'EN' : 'ES' }}
+      </button>
     </div>
-    <!-- Enlaces de Navegación (Estilo Shadcn) -->
-    <nav class="flex items-center gap-1 sm:gap-2">
+
+    <nav class="flex flex-wrap items-center gap-1 sm:justify-end sm:gap-2">
       @for(link of links(); track link.path){
       <a [routerLink]="link.path"
-        class="transition-color duration-700 ease-in-out px-3 py-2 rounded-md text-sm font-medium transition cursor-pointer hover:bg-muted :hover:text-foreground"
+        class="cursor-pointer rounded-md px-2 py-2 text-sm font-medium transition duration-700 ease-in-out hover:bg-muted sm:px-3"
         routerLinkActive="bg-muted text-foreground" [routerLinkActiveOptions]="{ exact: true }" hlmBtn variant="ghost"
         size="sm">
         {{link.label}}
       </a>
       }
-      <!-- Botón Temático o de Contacto Destacado -->
-      <a href="https://linkedin.com" target="_blank" hlmBtn size="sm" class="ml-2 hidden sm:inline-flex">
-        LinkedIn
+      <a href="https://www.linkedin.com/in/jorge-luis-rodriguez-756793154/" target="_blank" rel="noopener noreferrer" hlmBtn size="sm" class="linkedin-fill ml-0 inline-flex sm:ml-2">
+        <span class="linkedin-fill__water" aria-hidden="true"></span>
+        <span class="relative z-10">LinkedIn</span>
       </a>
     </nav>
-
 
   </div>
 </header>

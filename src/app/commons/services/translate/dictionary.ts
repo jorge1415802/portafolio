@@ -38,6 +38,28 @@ export const dictionary = {
         items: ['Scrum', 'Kanban', 'Agile', 'Clean Code', 'Git', 'Jest', 'Cypress'],
       },
     ],
+    about_eyebrow: 'Acerca de mí',
+    about_title: 'Construyo software fullstack que escala.',
+    about_summary: 'Soy ingeniero en computación con más de seis años desarrollando productos de punta a punta. Diseño la interfaz, las APIs y la infraestructura que las sostiene.',
+    about_paragraphs: [
+      'Mi trabajo combina Angular y React en el frontend con Go y NestJS en el backend. Integro esos servicios con AWS serverless, Kubernetes y colas para que el sistema siga respondiendo cuando el tráfico crece.',
+      'También me ocupo del rendimiento y de la operación: observabilidad, pipelines de CI/CD, contenedores y código que otro equipo pueda mantener. En proyectos recientes bajé tiempos de carga cerca de un 35% y la latencia de procesos pesados hasta un 98%.',
+    ],
+    about_focus_title: 'En qué me enfoco',
+    about_focus: [
+      {
+        title: 'Producto completo',
+        text: 'De la pantalla al despliegue: web, móvil, APIs y datos.',
+      },
+      {
+        title: 'Sistemas distribuidos',
+        text: 'Microservicios, mensajería y arquitecturas de alta disponibilidad.',
+      },
+      {
+        title: 'Calidad de entrega',
+        text: 'Pruebas, revisiones y entrega continua para salir a producción con menos riesgo.',
+      },
+    ],
     projects_list: [
       {
         title: 'Sistema de Alta Disponibilidad con NestJS & RabbitMQ',
@@ -113,6 +135,28 @@ export const dictionary = {
       {
         title: 'Methodologies and tools',
         items: ['Scrum', 'Kanban', 'Agile', 'Clean Code', 'Git', 'Jest', 'Cypress'],
+      },
+    ],
+    about_eyebrow: 'About me',
+    about_title: 'I build fullstack software that scales.',
+    about_summary: 'I am a computer engineer with more than six years building products end to end. I design the interface, the APIs, and the infrastructure that keeps them running.',
+    about_paragraphs: [
+      'My day-to-day work pairs Angular and React on the frontend with Go and NestJS on the backend. I connect those services with AWS serverless, Kubernetes, and queues so the system stays responsive as traffic grows.',
+      'I also own performance and operations: observability, CI/CD pipelines, containers, and code another team can maintain. On recent projects I cut load times by about 35% and latency on heavy jobs by up to 98%.',
+    ],
+    about_focus_title: 'What I focus on',
+    about_focus: [
+      {
+        title: 'Whole product',
+        text: 'From the screen to deployment: web, mobile, APIs, and data.',
+      },
+      {
+        title: 'Distributed systems',
+        text: 'Microservices, messaging, and high-availability architectures.',
+      },
+      {
+        title: 'Delivery quality',
+        text: 'Tests, reviews, and continuous delivery so production releases carry less risk.',
       },
     ],
     projects_list: [

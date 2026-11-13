@@ -1,27 +1,27 @@
 <div class="animate-fade-in">
-  <section class="flex min-h-[70vh] flex-col items-center justify-center px-4 text-center">
-    <h1 class="max-w-3xl text-4xl font-black leading-tight tracking-tight text-foreground sm:text-6xl">
+  <section class="flex flex-col items-center justify-center py-12 text-center sm:min-h-[70vh] sm:py-16">
+    <h1 class="max-w-3xl text-3xl font-black leading-tight tracking-tight text-foreground sm:text-5xl lg:text-6xl">
       {{ data().greetings }}
       <span class="bg-linear-to-r from-sky-400 to-blue-600 bg-clip-text text-transparent">
         Jorge Luis Rodriguez
       </span>
     </h1>
 
-    <p class="mt-6 max-w-2xl text-lg font-normal leading-relaxed text-muted-foreground sm:text-xl">
+    <p class="mt-5 max-w-2xl text-base font-normal leading-relaxed text-muted-foreground sm:mt-6 sm:text-xl">
       {{ data().profiency }}
     </p>
 
-    <div class="mt-10 flex flex-wrap justify-center gap-4">
-      <a [routerLink]="link()" hlmBtn size="lg" class="cursor-pointer text-base font-medium text-muted-foreground underline decoration-sky-400 decoration-1 underline-offset-8 transition-all duration-300 hover:text-sky-400 hover:drop-shadow-[0_0_8px_rgba(56,189,248,0.9)]">
+    <div class="mt-8 flex w-full max-w-md flex-col items-stretch gap-3 sm:mt-10 sm:max-w-none sm:flex-row sm:flex-wrap sm:items-center sm:justify-center">
+      <a [routerLink]="link()" hlmBtn size="lg" class="w-full cursor-pointer text-base font-medium text-muted-foreground underline decoration-sky-400 decoration-1 underline-offset-8 transition-all duration-300 hover:text-sky-400 hover:drop-shadow-[0_0_8px_rgba(56,189,248,0.9)] sm:w-auto">
         {{ data().see_projects }}
       </a>
-      <a href="mailto:rjogeluis64@gmail.com" hlmBtn variant="outline" size="lg" class="cursor-pointer text-base font-medium text-muted-foreground underline decoration-sky-400 decoration-1 underline-offset-8 transition-all duration-300 hover:text-sky-400 hover:drop-shadow-[0_0_8px_rgba(56,189,248,0.9)]">
+      <a href="mailto:rjogeluis64@gmail.com" hlmBtn variant="outline" size="lg" class="w-full cursor-pointer text-base font-medium text-muted-foreground underline decoration-sky-400 decoration-1 underline-offset-8 transition-all duration-300 hover:text-sky-400 hover:drop-shadow-[0_0_8px_rgba(56,189,248,0.9)] sm:w-auto">
         {{ data().contact_me }}
       </a>
     </div>
   </section>
 
-  <section class="mx-auto w-full max-w-6xl px-4 pb-16">
+  <section class="mx-auto w-full max-w-6xl pb-12 sm:pb-16">
     <div class="text-center">
       <h2 class="text-sm font-semibold uppercase tracking-[0.22em] text-sky-400">
         {{ data().stack_heading }}

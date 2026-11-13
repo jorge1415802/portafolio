@@ -1,24 +1,20 @@
-<div class="flex flex-row flex-wrap items-start justify-center gap-4">
+<div class="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3">
 	@for(project of projects(); track project.title){
-	<hlm-card size="sm"
-		class="mx-auto w-full max-w-sm min-h-96 rounded-2xl flex flex-nowrap justify-between border-purple-400 hover:border hover:border-purple-600 transition-colors duration-800 ease-in-out hover:shadow-[0_0_25px_-5px_rgba(56,189,248,0.4)]">
+	<hlm-card
+		class="flex h-full w-full flex-col justify-between rounded-2xl border  border-sky-400/25 bg-slate-950/40 transition-all duration-300 hover:border-sky-400 hover:shadow-[0_0_25px_-5px_rgba(56,189,248,0.4)]">
 		<hlm-card-header>
-			<h3 hlmCardTitle>{{project.title}}</h3>
-			<h4 hlmCardSubtitle class="font-bold">Stack</h4>
-			<h4 hlmCardSubtitle>Stack: {{project.stack}}</h4>
-			
+			<h3 hlmCardTitle class="text-base leading-snug sm:text-lg">{{project.title}}</h3>
+			<h4 hlmCardSubtitle class="text-sm leading-relaxed wrap-break-word">{{project.stack}}</h4>
 		</hlm-card-header>
-		<div hlmCardContent
-			class="max-h-48 space-y-4">
-			<p hlmCardDescription>{{project.description}}</p>
+		<div hlmCardContent class="space-y-4">
+			<p hlmCardDescription class="text-sm leading-relaxed sm:text-base">{{project.description}}</p>
 		</div>
 		<hlm-card-footer>
-			<a href="{{project.link}}" target="_blank" hlmBtn size="sm"
-				class="w-full rounded-md bg-cyan-700 hover:bg-cyan-900 text-foreground">
+			<a href="{{project.link}}" target="_blank" rel="noopener noreferrer" hlmBtn size="sm"
+				class="w-full rounded-md bg-cyan-700 text-foreground hover:bg-cyan-900">
 				{{project.go}}
 			</a>
 		</hlm-card-footer>
 	</hlm-card>
 	}
-
 </div>

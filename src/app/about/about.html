@@ -1,0 +1,31 @@
+<section class="animate-fade-in mx-auto w-full max-w-4xl py-6 sm:py-10">
+  <p class="text-xs font-semibold uppercase tracking-[0.22em] text-sky-400 sm:text-sm">
+    {{ data().eyebrow }}
+  </p>
+  <h1 class="mt-3 max-w-3xl text-3xl font-black leading-tight tracking-tight text-foreground sm:text-5xl">
+    {{ data().title }}
+  </h1>
+  <p class="mt-5 max-w-3xl text-base leading-relaxed text-muted-foreground sm:text-lg">
+    {{ data().summary }}
+  </p>
+
+  <div class="mt-8 space-y-4">
+    @for (paragraph of data().paragraphs; track paragraph) {
+      <p class="max-w-3xl text-sm leading-relaxed text-foreground/90 sm:text-base">
+        {{ paragraph }}
+      </p>
+    }
+  </div>
+
+  <h2 class="mt-12 text-lg font-semibold tracking-tight text-foreground sm:text-xl">
+    {{ data().focusTitle }}
+  </h2>
+  <div class="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4 lg:grid-cols-3">
+    @for (item of data().focus; track item.title) {
+      <article class="rounded-2xl border border-sky-400/25 bg-slate-950/40 p-4 transition-all duration-300 hover:border-sky-400 hover:shadow-[0_0_25px_-5px_rgba(56,189,248,0.4)] sm:p-5">
+        <h3 class="text-sm font-semibold text-sky-300 sm:text-base">{{ item.title }}</h3>
+        <p class="mt-2 text-sm leading-relaxed text-muted-foreground">{{ item.text }}</p>
+      </article>
+    }
+  </div>
+</section>
